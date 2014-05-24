@@ -63,12 +63,12 @@
 
 			handleSuccessResponse: function (ev, res) {
 				console.log("A valid URL!");
-				this.fire('valid-video', url: this.videoId);
+				this.fire('valid-video', {url: this.videoId});
 			},
 
 			handleErrorResponse: function (ev, res) {
 				console.log("NOTT a valid URL");
-				this.fire('invalid-video', url: this.videoId);
+				this.fire('invalid-video', {url: this.videoId});
 			}
 		});
 	</script>
