@@ -4,11 +4,27 @@
 	<meta charset="utf8"/>
 	<title>Demo 1</title>
 	<script src="../bower_components/platform/platform.js"></script>
-	<link rel="import" href="../src/yt-field.html">
+	<link rel="import" href="../yt-field.html">
 </head>
 <body>
 
 <yt-field></yt-field>
 
+<script type="text/javascript">
+	window.addEventListener('polymer-ready', function (e) {
+		var ytField = document.querySelector('yt-field');
+		console.log(ytField);
+
+		ytField.addEventListener('yt-valid-video', function (e) {
+			console.log("valid video!");
+			console.log("url inserted: " + e.detail.url);
+		});
+
+		ytField.addEventListener('yt-invalid-video', function (e) {
+			console.log("invalid video :(");
+			console.log("url inserted: " + e.detail.url);
+		});
+	});
+</script>
 </body>
 </html>
