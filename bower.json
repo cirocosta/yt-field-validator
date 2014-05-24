@@ -12,5 +12,9 @@
     "bower_components",
     "test",
     "tests"
-  ]
+  ],
+  "dependencies": {
+    "polymer": "Polymer/polymer#~0.2.4",
+    "core-ajax": "Polymer/core-ajax#~0.2.4"
+  }
 }
