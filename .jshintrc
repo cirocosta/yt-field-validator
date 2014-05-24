@@ -1,0 +1,27 @@
+{
+    "curly": false,
+    "eqeqeq": true,
+    "immed": true,
+    "latedef": true,
+    "newcap": true,
+    "noarg": true,
+    "sub": true,
+    "undef": true,
+    "boss": true,
+    "eqnull": true,
+    "browser": true,
+    "es5":true,
+    "smarttabs": true,
+    "expr":true,
+    "globals": {
+        "angular": true,
+        "console": true,
+        "expect" : true,
+        "inject" : true,
+        "describe" : true,
+        "beforeEach" : true,
+        "it" : true,
+        "xit" : true,
+        "xdescribe": true
+    }
+}
