@@ -1,4 +1,4 @@
-# Youtube Field Validator
+# <yt-field>
 
 > Validates a Youtube URL for you :neckbeard:
 
